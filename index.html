@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Для Ведьмочки</title>
+    <link rel="stylesheet" href="CSS/style/style.css">
+    <style>
+
+p {
+    color: rgb(255, 0, 0);
+    font-style: oblique;
+}
+h1 {
+    color: crimson;
+}
+h3 {
+    color: crimson;
+}
+h2 {
+  color: crimson;
+}
+img{
+ width: 170px;
+ border-radius: 17px ;
+}
+h3 {
+color: crimson;
+}
+
+.dashed-box {
+  width: 360px;     /* Ширина прямоугольника */
+  height:170px;     /* Высота */
+  border:inset 6px  #ff00c8; /* 4px — толщина, dashed — пунктир, цвет */
+  
+  font-display: block;          /* Центрируем текст внутри (опционально) */
+  align-items: center;
+  justify-content: center;
+  background-color: #ff00c83a;
+
+}
+
+h4 {
+    color: crimson;
+    width: 360px;
+    
+}
+
+    </style>
+</head>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>С 8 Марта 💐</title>
+
+<style>
+body {
+    font-family: sans-serif;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fdf6f0;
+    overflow-x: hidden;
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+/* ===== ЛЕПЕСТКИ (ФОН) ===== */
+#petals-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.petal {
+    position: absolute;
+    top: -20px;
+    background: pink;
+    border-radius: 50% 50% 50% 0;
+    opacity: 0.8;
+    transform: rotate(45deg);
+    animation: fall linear forwards;
+}
+
+@keyframes fall {
+    0% { transform: translateY(0) rotate(0deg); }
+    100% { transform: translateY(110vh) rotate(360deg); }
+}
+
+/* ===== ТЕКСТ ===== */
+h1 {
+    color: #ff5c5c;
+    font-size: 40px;
+}
+
+h2, h3 {
+    color: #d63384;
+    margin-top: 30px;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+/* ===== КНОПКА ===== */
+button.main-btn {
+    padding: 12px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    background-color: #ff8c8c;
+    color: white;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+button.main-btn:hover {
+    background-color: #ff5c5c;
+}
+
+/* ===== КОНВЕРТ ===== */
+#envelope-container {
+    position: relative;
+    width: 200px;
+    height: 120px;
+    margin: 40px auto;
+    display: none;
+}
+
+.envelope {
+    width: 100%;
+    height: 100%;
+    background: #fff0e1;
+    border: 2px solid #ff8c8c;
+    border-radius: 10px;
+    position: relative;
+    overflow: visible;
+}
+
+.cat {
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%) rotate(0deg);
+    font-size: 50px;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.heart {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    color: red;
+    opacity: 0;
+}
+
+.close-btn {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ff5c5c;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Анимация */
+.open .cat {
+    bottom: 50px;
+    opacity: 1;
+    transform: translateX(-50%) rotate(360deg);
+}
+
+.open .heart {
+    opacity: 1;
+    animation: heartJump 1s ease infinite;
+}
+
+@keyframes heartJump {
+    0% { transform: translateX(-50%) translateY(0) scale(1); }
+    50% { transform: translateX(-50%) translateY(-20px) scale(1.2); }
+    100% { transform: translateX(-50%) translateY(0) scale(1); }
+}
+</style>
+</head>
+
+<body>
+
+<div id="petals-container"></div>
+
+<h1>С 8 Марта💐</h1>
+
+<p>
+Бусинка, идей мало было что можно тебе еще сделать или подарить, поэтому решил сделать что-то необычное и то что я умею делать.
+Надеюсь сайты тебе никто еще не дарил и не посвящал 😅
+</p>
+
+<img src="фото для сайта.jpg" alt="f">
+
+<h3>Так вот, перейдем к делу🥰</h3>
+
+<p>
+Чудо,поздравляю тебя с 8 марта,ты у меня самая лучшая ,самая красивая девочка на свете. Только ты меня
+                делаешь
+                счастливым несмотря на то , что мы очень много ссоримся,обижаемся и злимся друг на друга. Я тебя люблю
+                больше
+                жизни и всегда любил. Только с тобой я хочу двигаться дальше и чтоб наша история не заканчивалась ,она
+                очень
+                неожиданно началась и хочу чтоб она продлилась всю жизнь. Я всегда думал какая девушка мой идеал, когда
+                увидел
+                тебя ,понял что ты один в один она. Твои глазки такие красивые что мне не хватит слов описать их
+                насколько, твои
+                мягенькие щечки это самое любимое место которое я люблю кусать, твои губки я никогда не перестану
+                целовать, а
+                твои волосики пахнут приятнее всего на свете, про фигуру я вообще молчу ,лучше твоей нет ни у кого.
+                Солнышко мое
+                ,запомни , ты самая красивая и никакие прыщи ,шрамы тебя не сделают некрасивой
+</p>
+
+<h2>Чучуть приколов</h2>
+
+<button class="main-btn" onclick="openEnvelope()">Открыть конверт 🐱</button>
+
+<div id="envelope-container">
+    <button class="close-btn" onclick="closeEnvelope()">✖️</button>
+    <div class="envelope">
+        <div class="cat">🐱</div>
+    </div>
+    <div class="heart">❤️</div>
+
+
+</div>
+
+<script>
+const container = document.getElementById('envelope-container');
+
+function openEnvelope() {
+    container.style.display = 'block';
+    setTimeout(() => {
+        container.classList.add('open');
+    }, 300);
+}
+
+function closeEnvelope() {
+    container.classList.remove('open');
+    setTimeout(() => {
+        container.style.display = 'none';
+    }, 300);
+}
+
+/* Лепестки */
+const petalsContainer = document.getElementById("petals-container");
+
+function createPetal() {
+    const petal = document.createElement("div");
+    petal.classList.add("petal");
+    petal.style.left = Math.random() * window.innerWidth + "px";
+
+    const size = 8 + Math.random() * 18;
+    petal.style.width = size + "px";
+    petal.style.height = size + "px";
+    petal.style.animationDuration = (4 + Math.random() * 4) + "s";
+
+    petalsContainer.appendChild(petal);
+
+    setTimeout(() => { petal.remove(); }, 9000);
+}
+
+setInterval(createPetal, 150);
+
+for (let i = 0; i < 30; i++) {
+    createPetal();
+}
+</script>
+
+</body>
+</html>
+<h3>Чувства</h3>
+<p>Я так рад, что у меня есть такая девочка, как ты. Моё солнышко, с тобой каждый день становится лучше и интереснее. Когда ты рядом, мне не страшно и не скучно, с тобой всё становится проще и веселее. Ты настоящее чудо, и каждый раз я удивляюсь, как мне так повезло встретить такую особенную девочку, такую добрую, весёлую, умную и красивую.
+
+Ты как маленькая бусинка — редкая, дорогая и очень красивая. Я люблю, когда ты улыбаешься, когда смеёшься, когда просто рядом со мной. Иногда ты ведёшь себя как маленькая ведьмочка — немного хитришь, немного шутишь, много хнычешь и это делает тебя ещё милее. Мне нравится, что с тобой можно говорить обо всём на свете, шутить, смеяться, делиться своими мыслями и просто быть собой. С тобой интересно, спокойно и весело одновременно, и каждый раз я думаю о том, как хорошо, что ты есть у меня.
+
+Ты умеешь делать обычные моменты особенными. Даже если мы просто сидим рядом, гуляем или говорим о чем-то простом, с тобой всё становится радостным и тёплым. Иногда я смотрю на тебя и понимаю, что такое чудо, как ты, бывает только один раз в жизни. Ты моё солнышко, которое радует меня каждый день, моя бусинка, которую хочется беречь, и моя маленькая ведьмочка, которая иногда грустит, но делает это с такой милой улыбкой.
+
+Я рад, что могу делиться с тобой своими мыслями, мечтами и секретами. Мне приятно слышать твой смех, видеть твою радость, чувствовать, что рядом именно ты. Ты делаешь мою жизнь светлее, веселее и интереснее, и я хочу, чтобы ты знала, как сильно я ценю каждый момент, который мы проводим вместе.
+
+Спасибо тебе за всё: за твою улыбку, за твоё тепло, за твою заботу, за твою доброту и за то, что ты просто есть. Ты моя бусинка, моё солнышко, моё чудо и моя маленькая ведьмочка одновременно. Я рад, что могу называть тебя своей девочкой, и хочу, чтобы ты знала — с тобой мне всегда хорошо, спокойно и весело. Ты делаешь меня счастливым, и я хочу, чтобы мы всегда были рядом друг с другом, чтобы смеяться, мечтать и радоваться каждому дню вместе.
+
+Ты — самое лучшее, что со мной произошло, и я хочу беречь тебя, как самую дорогую вещь. Я рад, что могу делить с тобой каждый момент, видеть твою радость и знать, что для тебя я тоже важен. Солнышко мое — я ценю тебя очень сильно и хочу, чтобы ты знала, как много ты значишь для меня. 💛</p>
+ 
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Собери букет</title>
+<style>
+  body {
+    font-family: sans-serif;
+    text-align: center;
+    padding: 50px;
+    background-color: #fdf6f0;
+  }
+
+  h2 {
+    color: #ff5c5c;
+  }
+
+  .flower-palette {
+    margin-bottom: 30px;
+  }
+
+  .flower {
+    font-size: 50px;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.2s;
+  }
+
+  .flower:hover {
+    transform: scale(1.3);
+  }
+
+  .bouquet {
+    border: 2px dashed #ff8c8c;
+    min-height: 100px;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff0e1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bouquet .flower {
+    cursor: default;
+  }
+
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff8c8c;
+    color: white;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #ff5c5c;
+  }
+</style>
+</head>
+<body>
+
+<h2>Собери свой букетик</h2>
+<p>Нажми на цветочки, чтобы добавить их в букет!</p>
+
+<div class="flower-palette">
+  <span class="flower" onclick="addFlower('🌹')">🌹</span>
+  <span class="flower" onclick="addFlower('🌷')">🌷</span>
+  <span class="flower" onclick="addFlower('🌻')">🌻</span>
+  <span class="flower" onclick="addFlower('💐')">💐</span>
+</div>
+
+<div class="bouquet" id="bouquet">
+  <!-- Здесь будут собираться цветы -->
+</div>
+
+<button onclick="clearBouquet()">Очистить букет</button>
+
+<script>
+function addFlower(flower) {
+  const bouquet = document.getElementById('bouquet');
+  const span = document.createElement('span');
+  span.textContent = flower;
+  span.classList.add('flower');
+  bouquet.appendChild(span);
+}
+
+function clearBouquet() {
+  document.getElementById('bouquet').innerHTML = '';
+}
+</script>
+
+</body>
+</html>
+<style>
+body {
+border: 5px solid #d63384;
+min-height: 100vh;
+box-sizing: border-box;
+}
+
+</style>
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Сколько дней мы вместе ❤️</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin-top: 100px;
+            background-color: #ffe6f0;
+        }
+        h1 {
+            color: #d63384;
+        }
+        #days {
+            font-size: 40px;
+            color: #ff0066;
+        }
+    </style>
+</head>
+<body>
+<h4>Ты особеная потому что</h4>
+<div class="dashed-box"><p>•ты мое солнышко и такое одно</p>
+    <p>•ты самая красивая</p>
+    <p>•ты самая милая</p>
+    <p>•самая любимая</p>
+</div>
+
+
+    <h1>Мы общаемся уже:</h1>
+    <div id="days"></div>
+
+    <script>
+        // ВАЖНО: укажи здесь вашу дату знакомства
+        const startDate = new Date("2024-10-22");
+
+        const today = new Date();
+        const difference = today - startDate;
+
+        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+
+        document.getElementById("days").innerText = days + " дней ❤️";
+    </script>
+
+</body>
+</html>
+
+<body>
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Два автоматических всплывающих окна</title>
+        <style>
+            body {
+                font-family: sans-serif;
+                text-align: left;
+                padding-top: 20px;
+                background-color: #ffffffa5;
+            }
+
+            .popup {
+                position: fixed;
+                top: 9%;
+                left: 80%;
+                width: 600px;
+                padding: 20px;
+                background-color: #ff005d;
+                border: 2px solid #ff0000;
+                border-radius: 10px;
+                transform: translate(-50%, -50%);
+                display: none;
+                z-index: 1000;
+                box-shadow: 0 4px 10px rgb(255, 0, 119);
+                font-size: 18px;
+                color: #000000;
+                opacity: 0;
+                transition: opacity 0.5s ease;
+            }
+
+            .popup.show {
+                display: block;
+                opacity: 1;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <!-- Первое всплывающее окно -->
+        <div id="popup1" class="popup">
+            Стоп,решил напомнить что ты очень красивая!❤️💖
+        </div>
+
+        <!-- Второе всплывающее окно -->
+        <div id="popup2" class="popup">
+            Это опять я😁,а ты у меня самая любимая
+        </div>
+
+        <script>
+            function showPopup(id, duration) {
+                const popup = document.getElementById(id);
+                popup.classList.add('show'); // показываем окно
+
+                // скрываем через duration мс
+                setTimeout(() => {
+                    popup.classList.remove('show');
+                }, duration);
+            }
+
+            // Первое окно через 20 секунд, закрывается через 5 секунд
+            setTimeout(() => {
+                showPopup('popup1',70000);
+            }, 20000);
+
+            // Второе окно через 40 секунд, закрывается через 5 секунд
+            setTimeout(() => {
+                showPopup('popup2', 7000);
+            }, 40000);
+        </script>
+
+    </body>
+
+    <video width="100%" controls>
+  <source src="" type="video/mp4">  
+  <!-- Записать видео 7 марта ночью и вставить его в пропуск -->
+</video>
+
+</body>
+</html>
